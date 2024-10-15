@@ -1,0 +1,224 @@
+.container {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+
+.store {
+    background-image: url(../images/store.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 422px;
+    height: 862px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 5px 240px 5px;
+    gap: 40px;
+}
+
+.store div{
+    gap: 10px;
+    display: grid;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: flex-end;
+    padding: 0;
+    height: 200px;
+}
+#one, #three {
+    grid-template-columns: 90px 90px 90px 90px;
+}
+#two{
+    grid-template-columns: 130px 130px 130px;
+}
+#two img{
+    width: 130px;
+}
+#one img{
+    width: 90px;
+}
+#three img{
+    width: 90px;
+}
+
+.store div img{
+    object-fit: contain;
+    object-position: bottom;
+}
+
+#cart{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: start;
+    align-content: flex-start;
+    position: absolute;
+    bottom: -90px;
+    left: 40px;
+    width: 350px;
+    height: 300px;
+    align-items: flex-end;
+}
+
+#cart img{
+    object-fit: contain;
+    margin-top: -50px;
+    margin-right: -40px;
+    width: 90px;
+    height: 200px;
+}
+
+.cart_img {
+    width: 552px;
+    position: absolute;
+    bottom: -200px;
+    left: -100px;
+}
+
+@media only screen and (max-width: 768px) {
+    .store {
+        background-image: url(../images/store.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 322px;
+        height: 50vh;
+        padding: 30px 5px 160px 5px;
+        gap: 0px;
+    }
+    
+    .store div{
+        gap: 20px;
+        display: grid;
+        justify-content: center;
+        align-items: flex-end;
+        align-content: flex-end;
+        padding: 0;
+        height: 130px;
+    }
+    #one, #three {
+        grid-template-columns: 40px 40px 40px 40px;
+    }
+    #two{
+        grid-template-columns: 60px 60px 60px;
+    }
+    #two img{
+        width: 70px;
+    }
+    #one img{
+        width: 40px;
+    }
+    #three img{
+        width: 60px;
+        height: 90px;
+    }
+    
+    .store div img{
+        object-fit: contain;
+        object-position: bottom;
+    }
+    
+    #cart{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: start;
+        align-content: flex-start;
+        position: absolute;
+        bottom: -70px;
+        left: 40px;
+        width: 250px;
+        height: 200px;
+        align-items: flex-end;
+    }
+    
+    #cart img{
+        object-fit: contain;
+        margin-top: -30px;
+        margin-right: -20px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .cart_img {
+        width: 320px;
+        position: absolute;
+        bottom: -132px;
+        left: -20px;
+    }
+    
+}
+
+@media only screen and (max-width: 550px) {
+    .store {
+        background-image: url(../images/store.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 211px;
+        height: 431px;
+        padding: 30px 5px 160px 5px;
+        gap: 0px;
+    }
+    
+    .store div{
+        gap: 10px;
+        display: grid;
+        justify-content: center;
+        align-items: flex-end;
+        align-content: flex-end;
+        padding: 0;
+        height: 100px;
+    }
+    #one, #three {
+        grid-template-columns: 40px 40px 40px 40px;
+    }
+    #two{
+        grid-template-columns: 40px 40px 40px;
+    }
+    #two img{
+        width: 40px;
+    }
+    #one img{
+        width: 40px;
+    }
+    #three img{
+        width: 40px;
+        height: 90px;
+    }
+    
+    .store div img{
+        object-fit: contain;
+        object-position: bottom;
+    }
+    
+    #cart{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: start;
+        align-content: flex-start;
+        position: absolute;
+        bottom: 4px;
+        left: 28px;
+        width: 200px;
+        height: 100px;
+        align-items: flex-end;
+    }
+    
+    #cart img{
+        object-fit: contain;
+        margin-top: -30px;
+        margin-right: -20px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .cart_img {
+        width: 276px;
+        position: absolute;
+        bottom: -51px;
+        left: -37px;
+    }
+}
